@@ -16,3 +16,57 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Style for the datetime-picker input */
+
+#datetime-picker {
+  margin-left: 500px;
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+  /* Style for the Start button */
+/* [data-start] {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* Style for the timer container */
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
+
+}
+
+/* Style for each timer field */
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  
+}
+
+/* Style for timer value */
+.value {
+  font-size: 24px;
+ 
+ border-radius: 4px;
+}
+
+/* Style for timer label */
+.label {
+  font-size: 14px;
+  color: #666;
+}
