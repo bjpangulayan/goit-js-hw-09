@@ -22,8 +22,9 @@ const options = {
       const selectedDate = selectedDates[0];
       const startTime = Date.now();
       if (selectedDate < startTime) {
-          Notify.failure("Pleaser choose a date in the future!",);
-         refs.startButton.disabled = true;
+          Notify.failure("Please choose a date in the future!",);
+          refs.startButton.disabled = true;
+          return;
       }
       refs.startButton.disabled = false;
       let intervalId = null;
@@ -31,7 +32,7 @@ const options = {
       refs.startButton.addEventListener("click", startCountdown);
       function startCountdown() {
           refs.startButton.disabled = true;
-          refs.datetimePicker.datetimePicker = true;
+          refs.datetimePicker.disabled = true;
 
           intervalId = setInterval(() => {
               const currentTime = Date.now();
